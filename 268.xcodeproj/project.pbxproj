@@ -13,6 +13,14 @@
 		F952688D20030D1100C0711F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F952688C20030D1100C0711F /* Assets.xcassets */; };
 		F952689020030D1100C0711F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F952688E20030D1100C0711F /* LaunchScreen.storyboard */; };
 		F952689320030D1100C0711F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F952689220030D1100C0711F /* main.m */; };
+		F952689E2003155200C0711F /* SlideNav.m in Sources */ = {isa = PBXBuildFile; fileRef = F952689D2003155200C0711F /* SlideNav.m */; };
+		F95268A42003187F00C0711F /* HeadlineCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F95268A32003187F00C0711F /* HeadlineCollectionCell.m */; };
+		F95268A720031B6B00C0711F /* HeadlineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F95268A620031B6B00C0711F /* HeadlineModel.m */; };
+		F95268AA2003431200C0711F /* contentCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F95268A92003431200C0711F /* contentCollectionCell.m */; };
+		F95268AD200345A300C0711F /* BookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F95268AC200345A300C0711F /* BookModel.m */; };
+		F95268B02003595400C0711F /* UserIntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = F95268AF2003595400C0711F /* UserIntroView.m */; };
+		F95268B3200361A100C0711F /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F95268B2200361A100C0711F /* UserModel.m */; };
+		F95268B62003781100C0711F /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F95268B52003781100C0711F /* UIColor+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,22 @@
 		F952688F20030D1100C0711F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F952689120030D1100C0711F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F952689220030D1100C0711F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F952689C2003155200C0711F /* SlideNav.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideNav.h; sourceTree = "<group>"; };
+		F952689D2003155200C0711F /* SlideNav.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideNav.m; sourceTree = "<group>"; };
+		F95268A22003187F00C0711F /* HeadlineCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeadlineCollectionCell.h; sourceTree = "<group>"; };
+		F95268A32003187F00C0711F /* HeadlineCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeadlineCollectionCell.m; sourceTree = "<group>"; };
+		F95268A520031B6B00C0711F /* HeadlineModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeadlineModel.h; sourceTree = "<group>"; };
+		F95268A620031B6B00C0711F /* HeadlineModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeadlineModel.m; sourceTree = "<group>"; };
+		F95268A82003431200C0711F /* contentCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = contentCollectionCell.h; sourceTree = "<group>"; };
+		F95268A92003431200C0711F /* contentCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = contentCollectionCell.m; sourceTree = "<group>"; };
+		F95268AB200345A300C0711F /* BookModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookModel.h; sourceTree = "<group>"; };
+		F95268AC200345A300C0711F /* BookModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookModel.m; sourceTree = "<group>"; };
+		F95268AE2003595400C0711F /* UserIntroView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserIntroView.h; sourceTree = "<group>"; };
+		F95268AF2003595400C0711F /* UserIntroView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserIntroView.m; sourceTree = "<group>"; };
+		F95268B1200361A100C0711F /* UserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		F95268B2200361A100C0711F /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		F95268B42003781100C0711F /* UIColor+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		F95268B52003781100C0711F /* UIColor+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +84,11 @@
 			children = (
 				F952688320030D1100C0711F /* AppDelegate.h */,
 				F952688420030D1100C0711F /* AppDelegate.m */,
+				F95268B820045EAB00C0711F /* Model */,
+				F95268BA20045ED300C0711F /* Views */,
 				F952688620030D1100C0711F /* ViewController.h */,
 				F952688720030D1100C0711F /* ViewController.m */,
+				F95268BB20045F2000C0711F /* Extend */,
 				F952688920030D1100C0711F /* Main.storyboard */,
 				F952688C20030D1100C0711F /* Assets.xcassets */,
 				F952688E20030D1100C0711F /* LaunchScreen.storyboard */,
@@ -69,6 +96,43 @@
 				F952689220030D1100C0711F /* main.m */,
 			);
 			path = 268;
+			sourceTree = "<group>";
+		};
+		F95268B820045EAB00C0711F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F95268B1200361A100C0711F /* UserModel.h */,
+				F95268B2200361A100C0711F /* UserModel.m */,
+				F95268A520031B6B00C0711F /* HeadlineModel.h */,
+				F95268A620031B6B00C0711F /* HeadlineModel.m */,
+				F95268AB200345A300C0711F /* BookModel.h */,
+				F95268AC200345A300C0711F /* BookModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F95268BA20045ED300C0711F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F95268AE2003595400C0711F /* UserIntroView.h */,
+				F95268AF2003595400C0711F /* UserIntroView.m */,
+				F952689C2003155200C0711F /* SlideNav.h */,
+				F952689D2003155200C0711F /* SlideNav.m */,
+				F95268A22003187F00C0711F /* HeadlineCollectionCell.h */,
+				F95268A32003187F00C0711F /* HeadlineCollectionCell.m */,
+				F95268A82003431200C0711F /* contentCollectionCell.h */,
+				F95268A92003431200C0711F /* contentCollectionCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F95268BB20045F2000C0711F /* Extend */ = {
+			isa = PBXGroup;
+			children = (
+				F95268B42003781100C0711F /* UIColor+Extension.h */,
+				F95268B52003781100C0711F /* UIColor+Extension.m */,
+			);
+			path = Extend;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +206,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F95268AA2003431200C0711F /* contentCollectionCell.m in Sources */,
 				F952688820030D1100C0711F /* ViewController.m in Sources */,
+				F95268AD200345A300C0711F /* BookModel.m in Sources */,
 				F952689320030D1100C0711F /* main.m in Sources */,
+				F95268B62003781100C0711F /* UIColor+Extension.m in Sources */,
+				F952689E2003155200C0711F /* SlideNav.m in Sources */,
+				F95268A720031B6B00C0711F /* HeadlineModel.m in Sources */,
+				F95268B3200361A100C0711F /* UserModel.m in Sources */,
 				F952688520030D1100C0711F /* AppDelegate.m in Sources */,
+				F95268A42003187F00C0711F /* HeadlineCollectionCell.m in Sources */,
+				F95268B02003595400C0711F /* UserIntroView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
