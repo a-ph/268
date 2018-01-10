@@ -8,7 +8,7 @@
 
 #import "UserIntroView.h"
 #import "UIColor+Extension.h"
-#import "UIView+Layout.h"
+#import "Masonry.h"
 
 @interface UserIntroView ()
 
@@ -58,26 +58,31 @@
     
     self.backgroundImageView.backgroundColor = [UIColor blueColor];
     self.backgroundImageView.frame = self.frame;
-    
+
     self.userNameLabel.text = @"我美不美";
-    self.userNameLabel.frame = CGRectMake(0, 35, 0, 0);
     [self.userNameLabel sizeToFit];
-    self.userNameLabel.centerX = self.centerX;
+    [self.userNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.mas_top).offset(35);
+    }];
     
-    self.headImageView.backgroundColor = [UIColor blackColor];
-    self.headImageView.frame = CGRectMake(self.frame.size.width/2-50, CGRectGetMaxY(self.userNameLabel.frame)+28, 100, 100);
     self.headImageView.image = [UIImage imageNamed:@"girl.jpg"];
+    [self.headImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(100, 100));
+        make.top.equalTo(self.userNameLabel.mas_bottom).offset(28);
+    }];
     
     self.abstractLabel.text = @"美不美 看大腿啊！";
-    self.abstractLabel.frame = CGRectMake(0, CGRectGetMaxY(self.headImageView.frame)+17, 0, 0);
     [self.abstractLabel sizeToFit];
-    self.abstractLabel.centerX = self.centerX;
-    
+    [self.abstractLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.headImageView.mas_bottom).offset(17);
+    }];
     
     self.memberAssetLabel.text = @"砖石会员：123 >";
-    self.memberAssetLabel.frame = CGRectMake(0, CGRectGetMaxY(self.abstractLabel.frame)+14, 0, 0);
     [self.memberAssetLabel sizeToFit];
-    self.memberAssetLabel.centerX = self.centerX;
+    [self.memberAssetLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.abstractLabel.mas_bottom).offset(14);
+        make.centerX.equalTo(@[self, self.userNameLabel, self.headImageView, self.abstractLabel]);
+    }];
     
     
 }

@@ -20,5 +20,8 @@ UIKIT_EXTERN NSString *const PingFang_SC_Medium;
 UIKIT_EXTERN NSString *const blackColor;
 UIKIT_EXTERN NSString *const grayColor;
 UIKIT_EXTERN NSString *const orangeColor;
+UIKIT_EXTERN NSString *const Color666666;
+UIKIT_EXTERN NSString *const Color333333;
+UIKIT_EXTERN CGFloat const leftSpace;
 
 @end

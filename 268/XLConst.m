@@ -14,5 +14,8 @@ NSString *const PingFang_SC_Medium = @"PingFang-SC-Medium";
 NSString *const blackColor = @"#444444";
 NSString *const grayColor = @"#7e879a";
 NSString *const orangeColor = @"#f58320";
+NSString *const Color666666 = @"#666666";
+NSString *const Color333333 = @"#333333";
+CGFloat const leftSpace = 15;
 
 @end
