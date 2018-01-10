@@ -30,6 +30,9 @@ CGFloat const userIntroHeifht = 263;
     [self.view addSubview:slideNav];
     
     //text github
+    
+    
+    // success github  hahaha
 }
 
 
