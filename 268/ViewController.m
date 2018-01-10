@@ -28,6 +28,8 @@ CGFloat const userIntroHeifht = 263;
     
     SlideNav *slideNav = [SlideNav slideNavViewWithTextColor:blackColor seletedColor:orangeColor frame:CGRectMake(0, userIntroHeifht, SCREEN_WIDTH, SCREEN_HEIGHT-userIntroHeifht-TabBar_HEIGHT)];
     [self.view addSubview:slideNav];
+    
+    //text github
 }
 
 
