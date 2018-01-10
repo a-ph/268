@@ -29,7 +29,7 @@
 		F95268CC200602E700C0711F /* UserSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F95268CB200602E700C0711F /* UserSettingViewController.m */; };
 		F95268CF20060C2100C0711F /* UserSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F95268CE20060C2100C0711F /* UserSettingTableViewCell.m */; };
 		F95268D120061B0000C0711F /* ic_arrow_back_black_48dp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F95268D020061B0000C0711F /* ic_arrow_back_black_48dp@2x.png */; };
-		F95268D320061B0E00C0711F /* ic_arrow_back_black_48dp@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F95268D220061B0D00C0711F /* ic_arrow_back_black_48dp@3x.png */; };
+		F95268D5200624B200C0711F /* ic_arrow_back_black_48dp@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F95268D4200624B100C0711F /* ic_arrow_back_black_48dp@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,7 +72,7 @@
 		F95268CD20060C2100C0711F /* UserSettingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserSettingTableViewCell.h; sourceTree = "<group>"; };
 		F95268CE20060C2100C0711F /* UserSettingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserSettingTableViewCell.m; sourceTree = "<group>"; };
 		F95268D020061B0000C0711F /* ic_arrow_back_black_48dp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_arrow_back_black_48dp@2x.png"; sourceTree = "<group>"; };
-		F95268D220061B0D00C0711F /* ic_arrow_back_black_48dp@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_arrow_back_black_48dp@3x.png"; path = "../../../../Downloads/material-design-icons-1.0.0/navigation/3x_ios/ic_arrow_back_black_48dp@3x.png"; sourceTree = "<group>"; };
+		F95268D4200624B100C0711F /* ic_arrow_back_black_48dp@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_arrow_back_black_48dp@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +131,7 @@
 				F95268C72005FF9C00C0711F /* ic_settings_black_@2x.png */,
 				F95268C62005FF9B00C0711F /* ic_settings_black_@3x.png */,
 				F95268D020061B0000C0711F /* ic_arrow_back_black_48dp@2x.png */,
-				F95268D220061B0D00C0711F /* ic_arrow_back_black_48dp@3x.png */,
+				F95268D4200624B100C0711F /* ic_arrow_back_black_48dp@3x.png */,
 				F95268B820045EAB00C0711F /* Model */,
 				F95268BA20045ED300C0711F /* Views */,
 				F952688620030D1100C0711F /* ViewController.h */,
@@ -250,11 +250,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F95268D320061B0E00C0711F /* ic_arrow_back_black_48dp@3x.png in Resources */,
 				F95268C52004CD1100C0711F /* girl.jpg in Resources */,
 				F952689020030D1100C0711F /* LaunchScreen.storyboard in Resources */,
 				F952688D20030D1100C0711F /* Assets.xcassets in Resources */,
 				F95268C82005FF9C00C0711F /* ic_settings_black_@3x.png in Resources */,
+				F95268D5200624B200C0711F /* ic_arrow_back_black_48dp@3x.png in Resources */,
 				F95268C92005FF9C00C0711F /* ic_settings_black_@2x.png in Resources */,
 				F952688B20030D1100C0711F /* Main.storyboard in Resources */,
 				F95268D120061B0000C0711F /* ic_arrow_back_black_48dp@2x.png in Resources */,
