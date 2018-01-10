@@ -7,6 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "SlideNav.h"
+#import "UserIntroView.h"
+#import "XLConst.h"
+
+CGFloat const userIntroHeifht = 263;
 
 @interface ViewController ()
 
@@ -16,7 +21,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    UserIntroView *userIntroView = [[UserIntroView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, userIntroHeifht)];
+    [userIntroView setUserModel:nil];
+    [self.view addSubview:userIntroView];
+    
+    SlideNav *slideNav = [SlideNav slideNavViewWithTextColor:blackColor seletedColor:orangeColor frame:CGRectMake(0, userIntroHeifht, SCREEN_WIDTH, SCREEN_HEIGHT-userIntroHeifht-TabBar_HEIGHT)];
+    [self.view addSubview:slideNav];
 }
 
 

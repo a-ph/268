@@ -21,6 +21,9 @@
 		F95268B02003595400C0711F /* UserIntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = F95268AF2003595400C0711F /* UserIntroView.m */; };
 		F95268B3200361A100C0711F /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F95268B2200361A100C0711F /* UserModel.m */; };
 		F95268B62003781100C0711F /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F95268B52003781100C0711F /* UIColor+Extension.m */; };
+		F95268C02004AB0300C0711F /* XLConst.m in Sources */ = {isa = PBXBuildFile; fileRef = F95268BF2004AB0200C0711F /* XLConst.m */; };
+		F95268C32004C54400C0711F /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = F95268C22004C54400C0711F /* UIView+Layout.m */; };
+		F95268C52004CD1100C0711F /* girl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F95268C42004CD1100C0711F /* girl.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,11 @@
 		F95268B2200361A100C0711F /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		F95268B42003781100C0711F /* UIColor+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
 		F95268B52003781100C0711F /* UIColor+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		F95268BE2004AB0200C0711F /* XLConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLConst.h; sourceTree = "<group>"; };
+		F95268BF2004AB0200C0711F /* XLConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLConst.m; sourceTree = "<group>"; };
+		F95268C12004C54400C0711F /* UIView+Layout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		F95268C22004C54400C0711F /* UIView+Layout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		F95268C42004CD1100C0711F /* girl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = girl.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,12 +90,15 @@
 		F952688220030D1100C0711F /* 268 */ = {
 			isa = PBXGroup;
 			children = (
+				F95268C42004CD1100C0711F /* girl.jpg */,
 				F952688320030D1100C0711F /* AppDelegate.h */,
 				F952688420030D1100C0711F /* AppDelegate.m */,
 				F95268B820045EAB00C0711F /* Model */,
 				F95268BA20045ED300C0711F /* Views */,
 				F952688620030D1100C0711F /* ViewController.h */,
 				F952688720030D1100C0711F /* ViewController.m */,
+				F95268BE2004AB0200C0711F /* XLConst.h */,
+				F95268BF2004AB0200C0711F /* XLConst.m */,
 				F95268BB20045F2000C0711F /* Extend */,
 				F952688920030D1100C0711F /* Main.storyboard */,
 				F952688C20030D1100C0711F /* Assets.xcassets */,
@@ -131,6 +142,8 @@
 			children = (
 				F95268B42003781100C0711F /* UIColor+Extension.h */,
 				F95268B52003781100C0711F /* UIColor+Extension.m */,
+				F95268C12004C54400C0711F /* UIView+Layout.h */,
+				F95268C22004C54400C0711F /* UIView+Layout.m */,
 			);
 			path = Extend;
 			sourceTree = "<group>";
@@ -193,6 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F95268C52004CD1100C0711F /* girl.jpg in Resources */,
 				F952689020030D1100C0711F /* LaunchScreen.storyboard in Resources */,
 				F952688D20030D1100C0711F /* Assets.xcassets in Resources */,
 				F952688B20030D1100C0711F /* Main.storyboard in Resources */,
@@ -211,8 +225,10 @@
 				F95268AD200345A300C0711F /* BookModel.m in Sources */,
 				F952689320030D1100C0711F /* main.m in Sources */,
 				F95268B62003781100C0711F /* UIColor+Extension.m in Sources */,
+				F95268C32004C54400C0711F /* UIView+Layout.m in Sources */,
 				F952689E2003155200C0711F /* SlideNav.m in Sources */,
 				F95268A720031B6B00C0711F /* HeadlineModel.m in Sources */,
+				F95268C02004AB0300C0711F /* XLConst.m in Sources */,
 				F95268B3200361A100C0711F /* UserModel.m in Sources */,
 				F952688520030D1100C0711F /* AppDelegate.m in Sources */,
 				F95268A42003187F00C0711F /* HeadlineCollectionCell.m in Sources */,
