@@ -34,7 +34,7 @@ NSString *const cellID = @"cellID";
     self.view.backgroundColor = [UIColor whiteColor];
     
     UIButton *backButton = [UIButton buttonWithType:0];
-    UIImage *backButtonImage = [UIImage imageNamed:@"ic_arrow_back_black_48dp"];
+    UIImage *backButtonImage = [[UIImage imageNamed:@"ic_arrow_back_black_48dp"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     [backButton setBackgroundImage:backButtonImage forState:UIControlStateNormal];
     [backButton addTarget:self action:@selector(navBack) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:backButton];

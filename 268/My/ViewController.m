@@ -36,11 +36,16 @@ CGFloat const userIntroHeifht = 263;
     
     UserIntroView *userIntroView = [[UserIntroView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, userIntroHeifht)];
     [userIntroView setUserModel:nil];
+    [LoginViewController new];
+    userIntroView.headImageViewActionBlock = ^{
+        [self presentViewController:[LoginViewController new] animated:YES completion:nil];
+    };
     [self.view addSubview:userIntroView];
     
     UIButton *settingButton = [UIButton buttonWithType:0];
-    UIImage *ic_settings_black_image = [UIImage imageNamed:@"ic_settings_black_"];
-    [settingButton setBackgroundImage:[UIImage imageNamed:@"ic_settings_black_"] forState:UIControlStateNormal];
+//    UIImage *ic_settings_black_image = [UIImage imageNamed:@"ic_settings_black_48dp"];
+    UIImage *ic_settings_black_image = [[UIImage imageNamed:@"ic_settings_black_48dp"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    [settingButton setBackgroundImage:ic_settings_black_image forState:UIControlStateNormal];
     [settingButton addTarget:self action:@selector(settingAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:settingButton];
     [settingButton mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -51,11 +56,6 @@ CGFloat const userIntroHeifht = 263;
     
     SlideNav *slideNav = [SlideNav slideNavViewWithTextColor:blackColor seletedColor:orangeColor frame:CGRectMake(0, userIntroHeifht, SCREEN_WIDTH, SCREEN_HEIGHT-userIntroHeifht-TabBar_HEIGHT)];
     [self.view addSubview:slideNav];
-    
-    //text github
-    
-    
-    // success github  hahaha
 }
 
 

@@ -24,12 +24,14 @@
 		F95268B62003781100C0711F /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F95268B52003781100C0711F /* UIColor+Extension.m */; };
 		F95268C02004AB0300C0711F /* XLConst.m in Sources */ = {isa = PBXBuildFile; fileRef = F95268BF2004AB0200C0711F /* XLConst.m */; };
 		F95268C52004CD1100C0711F /* girl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F95268C42004CD1100C0711F /* girl.jpg */; };
-		F95268C82005FF9C00C0711F /* ic_settings_black_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F95268C62005FF9B00C0711F /* ic_settings_black_@3x.png */; };
-		F95268C92005FF9C00C0711F /* ic_settings_black_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F95268C72005FF9C00C0711F /* ic_settings_black_@2x.png */; };
 		F95268CC200602E700C0711F /* UserSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F95268CB200602E700C0711F /* UserSettingViewController.m */; };
 		F95268CF20060C2100C0711F /* UserSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F95268CE20060C2100C0711F /* UserSettingTableViewCell.m */; };
-		F95268D120061B0000C0711F /* ic_arrow_back_black_48dp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F95268D020061B0000C0711F /* ic_arrow_back_black_48dp@2x.png */; };
-		F95268D5200624B200C0711F /* ic_arrow_back_black_48dp@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F95268D4200624B100C0711F /* ic_arrow_back_black_48dp@3x.png */; };
+		F95268E320074D1300C0711F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F95268E220074D1300C0711F /* LoginViewController.m */; };
+		F95268E62007577C00C0711F /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = F95268E52007577C00C0711F /* LoginView.m */; };
+		F95268E92007607C00C0711F /* UIButton+Addtions.m in Sources */ = {isa = PBXBuildFile; fileRef = F95268E82007607C00C0711F /* UIButton+Addtions.m */; };
+		F95268EC200763EC00C0711F /* LoginTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F95268EB200763EC00C0711F /* LoginTableView.m */; };
+		F95268EF2007649100C0711F /* LoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F95268EE2007649100C0711F /* LoginTableViewCell.m */; };
+		F95268F22007724000C0711F /* ForgetPassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F95268F12007724000C0711F /* ForgetPassWordViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,14 +67,23 @@
 		F95268BE2004AB0200C0711F /* XLConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLConst.h; sourceTree = "<group>"; };
 		F95268BF2004AB0200C0711F /* XLConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLConst.m; sourceTree = "<group>"; };
 		F95268C42004CD1100C0711F /* girl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = girl.jpg; sourceTree = "<group>"; };
-		F95268C62005FF9B00C0711F /* ic_settings_black_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_settings_black_@3x.png"; sourceTree = "<group>"; };
-		F95268C72005FF9C00C0711F /* ic_settings_black_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_settings_black_@2x.png"; sourceTree = "<group>"; };
 		F95268CA200602E700C0711F /* UserSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserSettingViewController.h; sourceTree = "<group>"; };
 		F95268CB200602E700C0711F /* UserSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserSettingViewController.m; sourceTree = "<group>"; };
 		F95268CD20060C2100C0711F /* UserSettingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserSettingTableViewCell.h; sourceTree = "<group>"; };
 		F95268CE20060C2100C0711F /* UserSettingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserSettingTableViewCell.m; sourceTree = "<group>"; };
-		F95268D020061B0000C0711F /* ic_arrow_back_black_48dp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_arrow_back_black_48dp@2x.png"; sourceTree = "<group>"; };
-		F95268D4200624B100C0711F /* ic_arrow_back_black_48dp@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_arrow_back_black_48dp@3x.png"; sourceTree = "<group>"; };
+		F95268D620070D8C00C0711F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F95268E120074D1300C0711F /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		F95268E220074D1300C0711F /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		F95268E42007577C00C0711F /* LoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		F95268E52007577C00C0711F /* LoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		F95268E72007607C00C0711F /* UIButton+Addtions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Addtions.h"; sourceTree = "<group>"; };
+		F95268E82007607C00C0711F /* UIButton+Addtions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Addtions.m"; sourceTree = "<group>"; };
+		F95268EA200763EC00C0711F /* LoginTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginTableView.h; sourceTree = "<group>"; };
+		F95268EB200763EC00C0711F /* LoginTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginTableView.m; sourceTree = "<group>"; };
+		F95268ED2007649100C0711F /* LoginTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginTableViewCell.h; sourceTree = "<group>"; };
+		F95268EE2007649100C0711F /* LoginTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginTableViewCell.m; sourceTree = "<group>"; };
+		F95268F02007724000C0711F /* ForgetPassWordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForgetPassWordViewController.h; sourceTree = "<group>"; };
+		F95268F12007724000C0711F /* ForgetPassWordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForgetPassWordViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,20 +139,8 @@
 				F95268C42004CD1100C0711F /* girl.jpg */,
 				F952688320030D1100C0711F /* AppDelegate.h */,
 				F952688420030D1100C0711F /* AppDelegate.m */,
-				F95268C72005FF9C00C0711F /* ic_settings_black_@2x.png */,
-				F95268C62005FF9B00C0711F /* ic_settings_black_@3x.png */,
-				F95268D020061B0000C0711F /* ic_arrow_back_black_48dp@2x.png */,
-				F95268D4200624B100C0711F /* ic_arrow_back_black_48dp@3x.png */,
-				F95268B820045EAB00C0711F /* Model */,
-				F95268BA20045ED300C0711F /* Views */,
-				F952688620030D1100C0711F /* ViewController.h */,
-				F952688720030D1100C0711F /* ViewController.m */,
-				F95268CA200602E700C0711F /* UserSettingViewController.h */,
-				F95268CB200602E700C0711F /* UserSettingViewController.m */,
-				F95268CD20060C2100C0711F /* UserSettingTableViewCell.h */,
-				F95268CE20060C2100C0711F /* UserSettingTableViewCell.m */,
-				F95268BE2004AB0200C0711F /* XLConst.h */,
-				F95268BF2004AB0200C0711F /* XLConst.m */,
+				F95268D620070D8C00C0711F /* PrefixHeader.pch */,
+				F95268DB20074B2400C0711F /* My */,
 				F95268BB20045F2000C0711F /* Extend */,
 				F952688920030D1100C0711F /* Main.storyboard */,
 				F952688C20030D1100C0711F /* Assets.xcassets */,
@@ -183,10 +182,79 @@
 		F95268BB20045F2000C0711F /* Extend */ = {
 			isa = PBXGroup;
 			children = (
+				F95268BE2004AB0200C0711F /* XLConst.h */,
+				F95268BF2004AB0200C0711F /* XLConst.m */,
 				F95268B42003781100C0711F /* UIColor+Extension.h */,
 				F95268B52003781100C0711F /* UIColor+Extension.m */,
 			);
 			path = Extend;
+			sourceTree = "<group>";
+		};
+		F95268DB20074B2400C0711F /* My */ = {
+			isa = PBXGroup;
+			children = (
+				F952688620030D1100C0711F /* ViewController.h */,
+				F952688720030D1100C0711F /* ViewController.m */,
+				F95268BA20045ED300C0711F /* Views */,
+				F95268B820045EAB00C0711F /* Model */,
+				F95268DC20074B7700C0711F /* SkipViewController */,
+			);
+			path = My;
+			sourceTree = "<group>";
+		};
+		F95268DC20074B7700C0711F /* SkipViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F95268E020074CC200C0711F /* LoginViewController */,
+				F95268DD20074BCD00C0711F /* UserSettingViewController */,
+			);
+			path = SkipViewController;
+			sourceTree = "<group>";
+		};
+		F95268DD20074BCD00C0711F /* UserSettingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F95268DF20074C0E00C0711F /* Model */,
+				F95268DE20074BE800C0711F /* Views */,
+				F95268CA200602E700C0711F /* UserSettingViewController.h */,
+				F95268CB200602E700C0711F /* UserSettingViewController.m */,
+			);
+			path = UserSettingViewController;
+			sourceTree = "<group>";
+		};
+		F95268DE20074BE800C0711F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F95268CD20060C2100C0711F /* UserSettingTableViewCell.h */,
+				F95268CE20060C2100C0711F /* UserSettingTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F95268DF20074C0E00C0711F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F95268E020074CC200C0711F /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F95268E120074D1300C0711F /* LoginViewController.h */,
+				F95268E220074D1300C0711F /* LoginViewController.m */,
+				F95268F02007724000C0711F /* ForgetPassWordViewController.h */,
+				F95268F12007724000C0711F /* ForgetPassWordViewController.m */,
+				F95268E42007577C00C0711F /* LoginView.h */,
+				F95268E52007577C00C0711F /* LoginView.m */,
+				F95268EA200763EC00C0711F /* LoginTableView.h */,
+				F95268EB200763EC00C0711F /* LoginTableView.m */,
+				F95268ED2007649100C0711F /* LoginTableViewCell.h */,
+				F95268EE2007649100C0711F /* LoginTableViewCell.m */,
+				F95268E72007607C00C0711F /* UIButton+Addtions.h */,
+				F95268E82007607C00C0711F /* UIButton+Addtions.m */,
+			);
+			path = LoginViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,11 +321,7 @@
 				F95268C52004CD1100C0711F /* girl.jpg in Resources */,
 				F952689020030D1100C0711F /* LaunchScreen.storyboard in Resources */,
 				F952688D20030D1100C0711F /* Assets.xcassets in Resources */,
-				F95268C82005FF9C00C0711F /* ic_settings_black_@3x.png in Resources */,
-				F95268D5200624B200C0711F /* ic_arrow_back_black_48dp@3x.png in Resources */,
-				F95268C92005FF9C00C0711F /* ic_settings_black_@2x.png in Resources */,
 				F952688B20030D1100C0711F /* Main.storyboard in Resources */,
-				F95268D120061B0000C0711F /* ic_arrow_back_black_48dp@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +382,7 @@
 			files = (
 				F95268AA2003431200C0711F /* contentCollectionCell.m in Sources */,
 				F952688820030D1100C0711F /* ViewController.m in Sources */,
+				F95268F22007724000C0711F /* ForgetPassWordViewController.m in Sources */,
 				F95268CC200602E700C0711F /* UserSettingViewController.m in Sources */,
 				F95268AD200345A300C0711F /* BookModel.m in Sources */,
 				F952689320030D1100C0711F /* main.m in Sources */,
@@ -326,10 +391,15 @@
 				F95268A720031B6B00C0711F /* HeadlineModel.m in Sources */,
 				F95268C02004AB0300C0711F /* XLConst.m in Sources */,
 				F95268B3200361A100C0711F /* UserModel.m in Sources */,
+				F95268E62007577C00C0711F /* LoginView.m in Sources */,
 				F952688520030D1100C0711F /* AppDelegate.m in Sources */,
 				F95268A42003187F00C0711F /* HeadlineCollectionCell.m in Sources */,
+				F95268E92007607C00C0711F /* UIButton+Addtions.m in Sources */,
+				F95268EF2007649100C0711F /* LoginTableViewCell.m in Sources */,
 				F95268B02003595400C0711F /* UserIntroView.m in Sources */,
+				F95268EC200763EC00C0711F /* LoginTableView.m in Sources */,
 				F95268CF20060C2100C0711F /* UserSettingTableViewCell.m in Sources */,
+				F95268E320074D1300C0711F /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +535,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = 268/PrefixHeader.pch;
 				INFOPLIST_FILE = 268/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -480,6 +552,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = 268/PrefixHeader.pch;
 				INFOPLIST_FILE = 268/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

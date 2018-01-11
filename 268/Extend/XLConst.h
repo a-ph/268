@@ -12,7 +12,8 @@
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 #define TabBar_HEIGHT 49.0f
-#define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height == 44 ? 24
+#define NavBar_HEIGHT 44.0f
+#define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
 
 @interface XLConst : NSObject
 

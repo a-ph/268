@@ -9,8 +9,12 @@
 #import <UIKit/UIKit.h>
 @class UserModel;
 
+typedef void(^headImageViewAction)();
+
 @interface UserIntroView : UIView
 
 @property (nonatomic, copy) UserModel *userModel;
+
+@property (nonatomic, copy) headImageViewAction headImageViewActionBlock;
 
 @end

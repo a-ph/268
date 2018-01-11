@@ -22,6 +22,10 @@
 
 @implementation UserIntroView
 
+- (void)headImageViewAction {
+    self.headImageViewActionBlock();
+}
+
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
@@ -33,6 +37,9 @@
         UIImageView *headImageView = [UIImageView new];
         headImageView.layer.cornerRadius = 50;
         headImageView.layer.masksToBounds = YES;
+        headImageView.userInteractionEnabled = YES;
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(headImageViewAction)];
+        [headImageView addGestureRecognizer:tap];
         [self addSubview:headImageView];
         UILabel *abstractLabel = [UILabel new];
         abstractLabel.font = [UIFont fontWithName:PingFang_SC_Medium size:13];
@@ -56,7 +63,8 @@
     
     _userModel = userModel;
     
-    self.backgroundImageView.backgroundColor = [UIColor blueColor];
+    self.backgroundImageView.backgroundColor = [UIColor grayColor];
+//    self.backgroundImageView.image = [UIImage imageNamed:@"pexels-photo-257849.jpeg"];
     self.backgroundImageView.frame = self.frame;
 
     self.userNameLabel.text = @"我美不美";
@@ -83,8 +91,6 @@
         make.top.equalTo(self.abstractLabel.mas_bottom).offset(14);
         make.centerX.equalTo(@[self, self.userNameLabel, self.headImageView, self.abstractLabel]);
     }];
-    
-    
 }
 
 /*
