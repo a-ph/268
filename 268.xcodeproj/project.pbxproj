@@ -31,7 +31,6 @@
 		F95268E92007607C00C0711F /* UIButton+Addtions.m in Sources */ = {isa = PBXBuildFile; fileRef = F95268E82007607C00C0711F /* UIButton+Addtions.m */; };
 		F95268EC200763EC00C0711F /* LoginTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F95268EB200763EC00C0711F /* LoginTableView.m */; };
 		F95268EF2007649100C0711F /* LoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F95268EE2007649100C0711F /* LoginTableViewCell.m */; };
-		F95268F22007724000C0711F /* ForgetPassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F95268F12007724000C0711F /* ForgetPassWordViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,8 +81,6 @@
 		F95268EB200763EC00C0711F /* LoginTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginTableView.m; sourceTree = "<group>"; };
 		F95268ED2007649100C0711F /* LoginTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginTableViewCell.h; sourceTree = "<group>"; };
 		F95268EE2007649100C0711F /* LoginTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginTableViewCell.m; sourceTree = "<group>"; };
-		F95268F02007724000C0711F /* ForgetPassWordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForgetPassWordViewController.h; sourceTree = "<group>"; };
-		F95268F12007724000C0711F /* ForgetPassWordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForgetPassWordViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,8 +240,6 @@
 			children = (
 				F95268E120074D1300C0711F /* LoginViewController.h */,
 				F95268E220074D1300C0711F /* LoginViewController.m */,
-				F95268F02007724000C0711F /* ForgetPassWordViewController.h */,
-				F95268F12007724000C0711F /* ForgetPassWordViewController.m */,
 				F95268E42007577C00C0711F /* LoginView.h */,
 				F95268E52007577C00C0711F /* LoginView.m */,
 				F95268EA200763EC00C0711F /* LoginTableView.h */,
@@ -382,7 +377,6 @@
 			files = (
 				F95268AA2003431200C0711F /* contentCollectionCell.m in Sources */,
 				F952688820030D1100C0711F /* ViewController.m in Sources */,
-				F95268F22007724000C0711F /* ForgetPassWordViewController.m in Sources */,
 				F95268CC200602E700C0711F /* UserSettingViewController.m in Sources */,
 				F95268AD200345A300C0711F /* BookModel.m in Sources */,
 				F952689320030D1100C0711F /* main.m in Sources */,

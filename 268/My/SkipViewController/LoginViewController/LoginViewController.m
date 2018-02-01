@@ -8,7 +8,6 @@
 
 #import "LoginViewController.h"
 #import "LoginView.h"
-#import "ForgetPassWordViewController.h"
 
 @interface LoginViewController ()
 
@@ -22,16 +21,54 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    NSString *title;
+    switch (self.loginType) {
+        case XLLoginTypeLoginRegister:
+            title = @"登录";
+            break;
+        case XLLoginTypeForgetPassWord:
+            title = @"忘记密码";
+            break;
+        case XLLoginTypeNewPassWord:
+            title = @"设置新密码";
+            break;
+            
+        default:
+            break;
+    }
+    self.title = title;
     
     [self creatUI];
 }
 
 - (void)creatUI {
-    LoginView *loginView = [[LoginView alloc] initWithTitleCountType:XLTitleCountTypeTwo];
-    loginView.frame = CGRectMake(15, 15, SCREEN_WIDTH-30, SCREEN_HEIGHT-30);
+    self.view.backgroundColor = [UIColor hexStringToColor:@"#f7f7f7"];
+    
+    LoginView *loginView = [[LoginView alloc] initWithTitleCountType:self.loginType];
     loginView.forgetPassWordActionBlock = ^{
-        [self presentViewController:[ForgetPassWordViewController new] animated:YES completion:nil];
+        LoginViewController *loginVC = [[LoginViewController alloc] init];
+        loginVC.loginType = XLLoginTypeForgetPassWord;
+        [self.navigationController pushViewController:loginVC animated:YES];
+    };
+    loginView.nextActionBlock = ^(XLLoginType loginType) {
+        switch (loginType) {
+            case XLLoginTypeNewPassWord:
+                [self.navigationController popToRootViewControllerAnimated:YES];
+                break;
+            case XLLoginTypeForgetPassWord: {
+                LoginViewController *loginVC = [[LoginViewController alloc] init];
+                loginVC.loginType = XLLoginTypeNewPassWord;
+                [self.navigationController pushViewController:loginVC animated:YES];
+            }
+                break;
+            case XLLoginTypeLoginRegister:
+                [self dismissViewControllerAnimated:YES completion:nil];
+                break;
+                
+            default:
+                break;
+        }
     };
     [self.view addSubview:loginView];
 }

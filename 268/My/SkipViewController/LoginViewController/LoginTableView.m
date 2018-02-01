@@ -18,7 +18,6 @@ static NSString *const cellID = @"cellID";
     if (self) {
         self.dataSource = self;
         self.delegate = self;
-        
         [self registerClass:[LoginTableViewCell class] forCellReuseIdentifier:cellID];
     }
     return self;

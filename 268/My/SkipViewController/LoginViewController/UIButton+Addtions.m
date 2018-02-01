@@ -12,10 +12,15 @@
 
 + (UIButton *)underLineButtonWithTitle:(NSString *)title {
     UIButton *button = [UIButton buttonWithType:0];
-    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:title];
-    NSRange strRange = {0,[str length]};
-    [str addAttribute:NSUnderlineStyleAttributeName value:[NSNumber numberWithInteger:NSUnderlineStyleSingle] range:strRange];
-    [button setAttributedTitle:str forState:UIControlStateNormal];
+    NSMutableAttributedString *strBlack = [[NSMutableAttributedString alloc] initWithString:title];
+    NSMutableAttributedString *strOrange = [[NSMutableAttributedString alloc] initWithString:title];
+    NSRange strRange = {0,[title length]};
+    [strBlack addAttribute:NSUnderlineStyleAttributeName value:[NSNumber numberWithInteger:NSUnderlineStyleSingle] range:strRange];
+    [strBlack addAttribute:NSForegroundColorAttributeName  value:[UIColor blackColor] range:strRange];
+    [button setAttributedTitle:strBlack forState:UIControlStateNormal];
+    [strOrange addAttribute:NSUnderlineStyleAttributeName value:[NSNumber numberWithInteger:NSUnderlineStyleSingle] range:strRange];
+    [strOrange addAttribute:NSForegroundColorAttributeName  value:[UIColor hexStringToColor:orangeColor] range:strRange];
+    [button setAttributedTitle:strOrange forState:UIControlStateSelected];
     return button;
     
 }

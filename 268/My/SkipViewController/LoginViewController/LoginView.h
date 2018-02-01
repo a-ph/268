@@ -14,11 +14,13 @@ typedef NS_ENUM(NSUInteger, XLTitleCountType) {
 };
 
 typedef void(^forgetPassWordAction)();
+typedef void(^nextAction)(XLLoginType loginType);
 
 @interface LoginView : UIView
 
-- (instancetype)initWithTitleCountType:(XLTitleCountType)XLTitleCountType;
+- (instancetype)initWithTitleCountType:(XLLoginType)loginType;
 
 @property (nonatomic, copy) forgetPassWordAction forgetPassWordActionBlock;
+@property (nonatomic, copy) nextAction nextActionBlock;
 
 @end

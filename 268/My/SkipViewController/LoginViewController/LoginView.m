@@ -14,7 +14,7 @@
 @property (nonatomic, strong) UIImageView *brandImageView;
 @property (nonatomic, strong) UIButton *loginButton;
 @property (nonatomic, strong) UIButton *registerButton;
-@property (nonatomic, assign) XLTitleCountType titleCountType;
+@property (nonatomic, assign) XLLoginType loginType;
 @property (nonatomic, strong) LoginTableView *tableView;
 @property (nonatomic, strong) UIButton *forgetPassWordButton;
 @property (nonatomic, strong) UIButton *loginBut;
@@ -24,12 +24,14 @@
 
 @implementation LoginView
 
-- (instancetype)initWithTitleCountType:(XLTitleCountType)XLTitleCountType {
+- (instancetype)initWithTitleCountType:(XLLoginType)loginType {
     self = [super init];
     if (self) {
+        
+        self.frame = CGRectMake(15, 15 + NavBar_HEIGHT + StatusBarHeight, SCREEN_WIDTH-30, SCREEN_HEIGHT-30 - NavBar_HEIGHT- StatusBarHeight);
         self.backgroundColor = [UIColor whiteColor];
         
-        self.titleCountType = XLTitleCountType;
+        self.loginType = loginType;
         
         UIImageView *brandImageView = [UIImageView new];
         brandImageView.image = [UIImage imageNamed:@"girl.jpg"];
@@ -38,12 +40,13 @@
         [self addSubview:brandImageView];
         self.brandImageView = brandImageView;
         
-        if (XLTitleCountType == XLTitleCountTypeTwo) {
+        if (loginType == XLLoginTypeLoginRegister) {
             UIButton *button1 = [UIButton underLineButtonWithTitle:@"账号登录"];
             [button1 setTitleColor:[UIColor hexStringToColor:orangeColor] forState:UIControlStateSelected];
             [button1 sizeToFit];
             [button1 addTarget:self action:@selector(loginAction) forControlEvents:UIControlEventTouchUpInside];
             [self addSubview:button1];
+            button1.selected = YES;
             self.loginButton = button1;
             
 //            UIView *sepLineView = [UIView new];
@@ -62,14 +65,14 @@
             self.registerButton = button2;
         } else {
             UIButton *button1 = [UIButton underLineButtonWithTitle:@"忘记密码"];
-            [button1 setTitleColor:[UIColor hexStringToColor:orangeColor] forState:UIControlStateSelected];
+            button1.selected = YES;
             [button1 sizeToFit];
-            [button1 addTarget:self action:@selector(loginAction) forControlEvents:UIControlEventTouchUpInside];
             [self addSubview:button1];
             self.loginButton = button1;
         }
         
         LoginTableView *tableView = [[LoginTableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+        [tableView setAllowsSelection:NO];
         tableView.tableFooterView = [UIView new];
         tableView.array = @[@{@"image":@"girl.jpg",
                               @"text":@"请输入你的手机号"
@@ -81,7 +84,7 @@
         self.tableView = tableView;
         
         UIButton *forgetPassWordButton = [UIButton underLineButtonWithTitle:@"忘记密码"];
-        [forgetPassWordButton setTitleColor:[UIColor hexStringToColor:orangeColor] forState:UIControlStateNormal];
+        forgetPassWordButton.selected = YES;
         [forgetPassWordButton addTarget:self action:@selector(forgetPassWordAction) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:forgetPassWordButton];
         [forgetPassWordButton sizeToFit];
@@ -91,6 +94,7 @@
         [loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [loginButton setBackgroundColor:[UIColor hexStringToColor:orangeColor]];
         [loginButton setTitle:@"登录" forState:0];
+        [loginButton addTarget:self action:@selector(nextClick) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:loginButton];
         self.loginBut = loginButton;
         
@@ -99,11 +103,35 @@
     return self;
 }
 
+- (void)nextClick {
+    switch (self.loginType) {
+        case XLLoginTypeNewPassWord:
+            
+            break;
+        case XLLoginTypeForgetPassWord:
+            
+            break;
+        case XLLoginTypeLoginRegister:
+            
+            break;
+            
+        default:
+            self.nextActionBlock(self.loginType);
+            break;
+    }
+    self.nextActionBlock(self.loginType);
+}
+
 - (void)forgetPassWordAction {
     self.forgetPassWordActionBlock();
 }
 
 - (void)loginAction {
+    if (self.loginButton.selected) {
+        return;
+    }
+    self.registerButton.selected = NO;
+    self.loginButton.selected = YES;
     self.tableView.array = @[@{@"image":@"girl.jpg",
                           @"text":@"请输入你的手机号"
                           },
@@ -114,6 +142,11 @@
 }
 
 - (void)registerAction {
+    if (self.registerButton.selected) {
+        return;
+    }
+    self.registerButton.selected = YES;
+    self.loginButton.selected = NO;
     self.tableView.array = @[@{@"image":@"girl.jpg",
                           @"text":@"请输入你的手机号"
                           },
@@ -136,7 +169,7 @@
         make.size.mas_equalTo(CGSizeMake(67, 67));
     }];
     
-    if (_titleCountType == XLTitleCountTypeTwo) {
+    if (self.loginType == XLLoginTypeLoginRegister) {
         [self.loginButton mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(_brandImageView.mas_bottom).with.offset(37.5);
             make.centerX.equalTo(self.mas_centerX).with.offset(-SCREEN_WIDTH/4);
@@ -148,6 +181,7 @@
         }];
     } else {
         self.forgetPassWordButton.hidden = YES;
+        [self.loginBut setTitle:@"下一步" forState:UIControlStateNormal];
         [self.loginButton mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(_brandImageView.mas_bottom).with.offset(37.5);
             make.centerX.equalTo(self.mas_centerX);
@@ -171,7 +205,7 @@
         make.size.mas_equalTo(CGSizeMake(300, 44));
         make.centerX.equalTo(self);
     }];
-    
+    self.loginBut.layer.cornerRadius = 22;
 }
 
 

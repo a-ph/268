@@ -38,7 +38,9 @@ CGFloat const userIntroHeifht = 263;
     [userIntroView setUserModel:nil];
     [LoginViewController new];
     userIntroView.headImageViewActionBlock = ^{
-        [self presentViewController:[LoginViewController new] animated:YES completion:nil];
+        LoginViewController *vc = [LoginViewController new];
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+        [self presentViewController:nav animated:YES completion:nil];
     };
     [self.view addSubview:userIntroView];
     

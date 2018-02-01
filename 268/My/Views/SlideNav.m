@@ -122,32 +122,38 @@ static NSString *const contentCellID = @"contentCellID";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"1");
-    
-    for (NSInteger i = 0; i<self.headlineArray.count; i++) {
-        HeadlineModel *model = self.headlineArray[i];
-        if (model.isSeleted) {
-            [self collectionView:collectionView didDeselectItemAtIndexPath:[NSIndexPath indexPathForItem:i inSection:0]];
+    if (collectionView == self.headlineCollectionView) {
+        for (NSInteger i = 0; i<self.headlineArray.count; i++) {
+            HeadlineModel *model = self.headlineArray[i];
+            if (model.isSeleted) {
+                [self collectionView:collectionView didDeselectItemAtIndexPath:[NSIndexPath indexPathForItem:i inSection:0]];
+            }
         }
+        
+        HeadlineModel *model = self.headlineArray[indexPath.item];
+        model.isSeleted = YES;
+        self.headlineArray[indexPath.item] = model;
+        HeadlineCollectionCell *cell = (HeadlineCollectionCell *)[collectionView cellForItemAtIndexPath:indexPath];
+        [cell setHeadlineModel:model];
+        
+        //    每个标签下的请求.... 请求完刷新数据，保存数据
+        
+        //    [self.contentCollectionView reloadData];
     }
     
-    HeadlineModel *model = self.headlineArray[indexPath.item];
-    model.isSeleted = YES;
-    self.headlineArray[indexPath.item] = model;
-    HeadlineCollectionCell *cell = (HeadlineCollectionCell *)[collectionView cellForItemAtIndexPath:indexPath];
-    [cell setHeadlineModel:model];
     
-//    每个标签下的请求.... 请求完刷新数据，保存数据
-    
-//    [self.contentCollectionView reloadData];
     
 }
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"2");
-    HeadlineModel *model = self.headlineArray[indexPath.item];
-    model.isSeleted = NO;
-    self.headlineArray[indexPath.item] = model;
-    HeadlineCollectionCell *cell = (HeadlineCollectionCell *)[collectionView cellForItemAtIndexPath:indexPath];
-    [cell setHeadlineModel:model];
+    if (collectionView == self.headlineCollectionView) {
+        HeadlineModel *model = self.headlineArray[indexPath.item];
+        model.isSeleted = NO;
+        self.headlineArray[indexPath.item] = model;
+        HeadlineCollectionCell *cell = (HeadlineCollectionCell *)[collectionView cellForItemAtIndexPath:indexPath];
+        [cell setHeadlineModel:model];
+    }
+
 }
 
 + (instancetype)slideNavViewWithTextColor:(NSString *)textColor seletedColor:(NSString *)seletedColor frame:(CGRect)frame {

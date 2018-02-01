@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSUInteger, XLLoginType) {
+    XLLoginTypeLoginRegister,
+    XLLoginTypeForgetPassWord,
+    XLLoginTypeNewPassWord,
+};
+
 @interface LoginViewController : UIViewController
+
+@property (nonatomic, assign) XLLoginType loginType;
 
 @end

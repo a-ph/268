@@ -19,13 +19,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "268/My/SkipViewController/LoginViewController/LoginViewController.m"
-            timestampString = "537360223.5134799"
+            filePath = "268/My/Views/HeadlineCollectionCell.m"
+            timestampString = "537441192.4816999"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "-creatUI"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "-setHeadlineModel:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
